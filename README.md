@@ -161,13 +161,4 @@ PSI < 0.10       Low
 
 A two-sample KS statistic/p-value provides a second distribution-shift signal. Model confidence is also compared between windows.
 
-## Submission checklist
 
-- [ ] Public GitHub repository
-- [ ] README with setup and reproduction commands
-- [ ] Source code
-- [ ] Notebook / short write-up
-- [ ] `reports/metrics.json`
-- [ ] `reports/drift_report.json`
-- [ ] PR curve image
-- [ ] Do not upload the Kaggle CSV itself
