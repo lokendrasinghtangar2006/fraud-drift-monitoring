@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Data
+data/*.csv
+data/*.zip
+data/*.parquet
+
+# Models and generated outputs
+models/*.joblib
+models/*.json
+reports/*.json
+reports/figures/*.png
+reports/figures/*.jpg
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

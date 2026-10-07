@@ -1,0 +1,30 @@
+PROJECT: Fraud/Anomaly Detection with Drift Monitoring
+
+SCENARIO:
+Fintech transaction patterns change over time. A static model can degrade.
+
+SUPERVISED MODEL:
+Class-weighted Logistic Regression implemented with NumPy.
+
+UNSUPERVISED MODEL:
+Isolation Forest implemented with NumPy; fraud labels are not used during fitting.
+
+IMBALANCE STRATEGY:
+Balanced class weights. Default oversampling is intentionally not used.
+
+METRICS:
+Precision, Recall, F1, PR-AUC, ROC-AUC, confusion matrix.
+PR-AUC is emphasized because the fraud class is rare.
+
+COST:
+Default false-negative cost = 10.
+Default false-positive cost = 1.
+The threshold is selected by minimizing expected cost.
+
+DRIFT:
+PSI, two-sample KS test, and model-confidence distribution shift.
+PSI >= 0.25 or significant confidence shift -> retraining recommendation.
+
+ENVIRONMENT:
+Windows + VS Code + Python 3.13 + venv.
+No Anaconda, Docker, SQL/Oracle, Node.js or GPU required.
